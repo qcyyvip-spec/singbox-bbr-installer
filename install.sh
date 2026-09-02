@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-APP_NAME="singbox-bbr-installer"
+APP_NAME="启辰音乐工具箱"
 SERVICE_NAME="sing-box-nav"
 BIN_NAME="sing-box"
 BIN_PATH="/usr/local/bin/${BIN_NAME}"
@@ -612,8 +612,13 @@ show_status() {
 }
 
 show_banner() {
+  cat <<'EOF'
+╭────────────────────────────────────────╮
+│   qcyy  ♪  启辰音乐工具箱              │
+╰────────────────────────────────────────╯
+EOF
   printf '\n%s\n' "========================================"
-  printf '%s\n' "  Sing-box / BBR Navigator"
+  printf '%s\n' "  启辰音乐工具箱"
   printf '%s\n' "========================================"
   printf '%s\n' "1) 安装 sing-box 节点"
   printf '%s\n' "2) 安装 / 启用 BBR"
